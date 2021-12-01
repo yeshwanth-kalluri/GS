@@ -1,0 +1,43 @@
+<ng-template [ngIf] = "newRoute == 'login'">
+  <div class ="ms-auto">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-user-circle p-3" aria-hidden="true"></i>
+    </a>
+  </div>
+</ng-template>
+<ng-template [ngIf] = "newRoute == 'register'">
+  <div class ="ms-auto">
+    <a class="nav-link " routerLink = "/login" >Login</a>
+  </div>
+</ng-template>
+<ng-template [ngIf] = "newRoute == 'home'">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" >
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" routerLink = "/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink = "/features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink = "/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink = "/details">Details</a>
+          </li>
+        </ul>
+          <div class="nav-item ms-auto">
+            <a class="nav-link " routerLink = "/login"  >logout</a>
+          </div>
+       </div>
+    </div>
+  </nav>
+</ng-template>
